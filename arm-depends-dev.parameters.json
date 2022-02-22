@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
         "parameters": {
             "accountName":{
-                "value": "testdemoprod22"
+                "value": "testdemodev11"
         },
         "planName": {
-            "value": "testdemoprod22"
+            "value": "testdemodev11"
         },
         "webAppName": {
-            "value": "testdemoprod22"
+            "value": "testdemodev11"
         }
     }
 }

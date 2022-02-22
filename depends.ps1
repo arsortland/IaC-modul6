@@ -7,7 +7,16 @@ $rg  ="iac-demo-rg-drey"
 New-AzResourceGroup -Name $rg -Location "West Europe" -Force
 
 New-AzResourceGroupDeployment `
-    -Name "new-dependstest-iac-demo" `
+    -Name "new-prodtest-iac-demo" `
     -ResourceGroupName $rg `
     -TemplateFile '.\arm-depends.json' `
     -TemplateParameterFile '.\arm-depends.parameters.json'
+
+$rg  ="iac-demo-rg-drey"
+New-AzResourceGroup -Name $rg -Location "West Europe" -Force
+
+New-AzResourceGroupDeployment `
+    -Name "new-devtest-iac-demo" `
+    -ResourceGroupName $rg `
+    -TemplateFile '.\arm-depends.json' `
+    -TemplateParameterFile '.\arm-depends-dev.parameters.json'
