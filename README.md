@@ -1,0 +1,1 @@
+En ARM template som ruller ut storage, blob, app service og app miljøer til et fiktivt prod og devmiljø.
